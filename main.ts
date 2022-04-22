@@ -1,8 +1,8 @@
 input.onButtonPressed(Button.A, function () {
-    for (let x = 0; x <= 4; x++) {
-        for (let y = 0; y <= 4; y++) {
-            led.toggle(x - y, x + 1)
+    for (let x = 0; x <= 8; x++) {
+        for (let y = 0; y <= 8; y++) {
             led.toggle(x, x)
+            basic.pause(50)
         }
     }
 })
